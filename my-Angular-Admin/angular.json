@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Project-Angular-App": {
+    "my-Angular-Admin": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Project-Angular-App",
+            "outputPath": "dist/my-Angular-Admin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Project-Angular-App:build"
+            "browserTarget": "my-Angular-Admin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Project-Angular-App:build:production"
+              "browserTarget": "my-Angular-Admin:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Project-Angular-App:build"
+            "browserTarget": "my-Angular-Admin:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Project-Angular-App:serve"
+            "devServerTarget": "my-Angular-Admin:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Project-Angular-App:serve:production"
+              "devServerTarget": "my-Angular-Admin:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Project-Angular-App"
+  "defaultProject": "my-Angular-Admin"
 }
